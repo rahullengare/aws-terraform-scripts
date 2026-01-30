@@ -6,10 +6,10 @@
 #1st way to create
 /*
 resource "aws_instance" "my-instance" {
-  ami = "ami-07ff62358b87c7116"
+  ami = "<ami-id>"
   instance_type = "t2.micro"
   count = 2
-  subnet_id     = "subnet-05cddf281d2df1926"
+  subnet_id     = "<subnet-id>"
   tags = {
     Name = "web-server-new1"
   }
@@ -23,7 +23,7 @@ resource "aws_instance" "my-instance" {
   ami = "ami-07ff62358b87c7116"
   instance_type = "t2.micro"
   count = 2
-  subnet_id     = "subnet-05cddf281d2df1926"
+  subnet_id     = "<subnet-id>"
   tags = {
     Name = "web-server-new1${count.index}"
   }
